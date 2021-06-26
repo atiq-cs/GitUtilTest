@@ -11,7 +11,7 @@ namespace iQubitNote
             await Bootstrapper
                 .Factory
                 .CreateWeb(args)
-                .DeployToGitHubPagesBranch("atiq-cs", "note", Config.FromSetting<string>("GITHUB_TOKEN"), "dev")
+                .DeployToGitHubPagesBranch("atiq-cs", "note", Config.FromSetting<string>("GITHUB_TOKEN"), "web")
                 .RunAsync();
     }
 }
