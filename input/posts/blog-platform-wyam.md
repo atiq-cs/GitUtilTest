@@ -29,8 +29,8 @@ Create a new repo. do a clone or (init and add files).
 
 However, _we don't create master branch_. We only create a branch called `source`.
 
-    git clone https://github.com/atiq-cs/saos-site
-    Rename-Item saos-site wyamBlog
+    git clone https://github.com/atiq-cs/fftsys-site
+    Rename-Item fftsys-site wyamBlog
     pushd wyamBlog
     git checkout -b source
     git add .gitignore
@@ -110,7 +110,7 @@ Here's example of local build,
               `%@@@@@@@@@@@@@@@@@P
                  `*%RB@@@@@RRP`
     **BUILD**
-    Loading configuration from file:///D:/Code/wyamBlog/saos/config.wyam
+    Loading configuration from file:///D:/Code/wyamBlog/fftsys/config.wyam
     Installing NuGet packages
         Installing packages to C:/Users/atiq/.nuget/packages (using global packages folder)
         NuGet packages installed in 250 ms
@@ -121,7 +121,7 @@ Here's example of local build,
     Evaluating configuration script
         Evaluated configuration script in 26 ms
     Root path:
-        file:///D:/Code/wyamBlog/saos
+        file:///D:/Code/wyamBlog/fftsys
     Input path(s):
         file:///C:/Users/atiq/.nuget/packages/Wyam.Blog.CleanBlog.2.2.9/content
         theme
@@ -204,7 +204,7 @@ Here's example of deployment from local pwsh,
               `%@@@@@@@@@@@@@@@@@P
                  `*%RB@@@@@RRP`
     **BUILD**
-    Loading configuration from file:///D:/Code/wyamBlog/saos/config.wyam
+    Loading configuration from file:///D:/Code/wyamBlog/fftsys/config.wyam
     Installing NuGet packages
         Installing packages to C:/Users/atiq/.nuget/packages (using global packages folder)
         NuGet packages installed in 258 ms
@@ -215,7 +215,7 @@ Here's example of deployment from local pwsh,
     Evaluating configuration script
         Evaluated configuration script in 5 ms
     Root path:
-        file:///D:/Code/wyamBlog/saos
+        file:///D:/Code/wyamBlog/fftsys
     Input path(s):
         file:///C:/Users/atiq/.nuget/packages/Wyam.Blog.CleanBlog.2.2.9/content
         theme
@@ -332,7 +332,7 @@ References for setting up custom domain:
 - [Host on GitHub - Use a Custom Domain](https://gohugo.io/hosting-and-deployment/hosting-on-github/#use-a-custom-domain)
 - [github - Managing a custom domain for your GitHub Pages site](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site)
 
-I my case I set it up on subdomain, `blog.saosx.com`
+I my case I set it up on subdomain, `blog.fftsysx.com`
 
 Additionally, I enable DNSSEC for my primary domain which is not required in your case:
 
@@ -393,7 +393,7 @@ To edit pipeline variables on azure cloud.
 So, far, this is pretty good experience.
 
 Finally, my blog URL:
-[SAOSX blog](https://blog.saosx.com)
+[fftsysX blog](https://blog.fftsysx.com)
 
 wyam uses markdig flavor of Markdown of by default: [markdig math](https://github.com/lunet-io/markdig/blob/master/src/Markdig.Tests/Specs/MathSpecs.md)
 
