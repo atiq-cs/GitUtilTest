@@ -2,10 +2,12 @@ Title: Wyam with Cake Build, Github pages and Azure Pipeline (Windows Server 201
 Published: 11/27/2019
 Tags:
   - markdown
-  - wyam
+  - statiq
   - Cloud
   - Pipelines
 ---
+Wyam is deprecated. Replacement is [statiq](https://github.com/statiqdev).
+
 ## Wyam
 First, we install wyam install locally using pwsh admin,
 
