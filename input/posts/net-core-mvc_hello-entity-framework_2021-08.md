@@ -20,7 +20,13 @@ We follow this primary reference documentation, [MS Docs - aspnet/core/data/ef-r
     dotnet add package Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore
 
     dotnet aspnet-codegenerator razorpage -m Student -dc ContosoUniversity.Data.SchoolContext `
+    -udl -outDir Pages\Students --referenceScriptLibraries
+
+If we are using SQLite database,
+
+    dotnet aspnet-codegenerator razorpage -m Student -dc ContosoUniversity.Data.SchoolContext `
     -udl -outDir Pages\Students --referenceScriptLibraries -sqlite
+
 
 We refactor all `P03_ContosoUniversity_RP` with `ContosoUniversity`.
 

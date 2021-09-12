@@ -1,4 +1,4 @@
-Title: dotnet core Hello World with Entity Framework and Database
+Title: dotnet core Hello World with Entity Framework and Database in 2018
 Published: 7/1/2018
 Tags:
   - dotnet core
