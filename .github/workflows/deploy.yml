@@ -11,7 +11,7 @@ jobs:
         submodules: 'true'
     - uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.412' # SDK Version to use.
+        dotnet-version: '3.1.413' # SDK Version to use.
     - run: dotnet run -- deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
