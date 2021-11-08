@@ -6,12 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout root and submodule
-      uses: actions/checkout@main   # ref, https://github.com/actions/checkout
+      uses: actions/checkout@v2   # ref, https://github.com/actions/checkout
       with:
         submodules: 'true'
     - uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '6.0.100-rc.2.21505.57' # SDK Version (requires full version), target: https://dotnet.microsoft.com/download/dotnet/6.0
-    - run: dotnet run -- deploy
+        # SDK Version (requires full version)
+        # i.e, https://dotnet.microsoft.com/download/dotnet/6.0
+        dotnet-version: '6.0.100-rc.2.21505.57'
+    - run: dotnet run --configuration Release -- deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
